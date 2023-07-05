@@ -4,6 +4,10 @@ async function conclusion() {
 
     
     let cardWrap = document.querySelector('.card-wrapper');
+    let body = document.querySelector('body');
+    let imgWrap = document.createElement("div");
+    imgWrap.className = "img-wrapper"
+    body.appendChild(imgWrap);
         
     
     function conclusionWine(obj) {
@@ -63,10 +67,10 @@ async function conclusion() {
             }
             card.appendChild(ulBrands);  // Вывела бренды вина, оформила через ul и li
 
-            let img = document.createElement("img"); 
+            let image = document.createElement("img");
             let images = wine[i].img;
-            img.src = images;
-            card.appendChild(img);
+            image.src = images;
+            imgWrap.appendChild(image);
         }
     }
     conclusionWine(wine)

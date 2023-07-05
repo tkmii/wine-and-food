@@ -1,9 +1,44 @@
+body {
+    font-family: 'Signika', sans-serif;
+}
+
 h1 {
     text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 2.5em;
 }
 
 .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
+    padding: 0 40px;
+    margin-bottom: 40px;
 }
+
+.sort__item {
+    list-style-image: url(img/grape.png);
+}
+
+.combinations__item {
+    list-style-image: url(img/food.png);
+}
+
+.brands__item {
+    list-style-image: url(img/wine.png);
+}
+
+.img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 0 40px;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* font-family: 'Passion One', cursive;
+font-family: 'Signika', sans-serif; */
