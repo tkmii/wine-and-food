@@ -4,17 +4,13 @@ async function conclusion() {
 
     
     let cardWrap = document.querySelector('.card-wrapper');
-    let body = document.querySelector('body');
-    let imgWrap = document.createElement("div");
-    imgWrap.className = "img-wrapper"
-    body.appendChild(imgWrap);
+    let imgWrap = document.querySelector('.img-wrapper');
         
-    
     function conclusionWine(obj) {
         for (let i = 0; i < wine.length; i++) {
             let card = document.createElement("div"); 
             card.className = 'card'; 
-            cardWrap.appendChild(card); // Создаём новый элемент div с классом card и помещаем в div c классом card-wrapper
+            cardWrap.insertBefore(card, imgWrap); // Создаём новый элемент div с классом card и помещаем в div c классом card-wrapper
 
             let h2 = document.createElement("h2");
             h2.className = 'type-wine'; 

@@ -16,6 +16,11 @@ h1 {
     margin-bottom: 40px;
 }
 
+.img-wrapper {
+    display: flex;
+    gap: 16.7%;
+}
+
 .sort__item {
     list-style-image: url(img/grape.png);
 }
@@ -28,17 +33,6 @@ h1 {
     list-style-image: url(img/wine.png);
 }
 
-.img-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
-    padding: 0 40px;
-    align-items: center;
-}
-
 img {
     max-width: 100%;
 }
-
-/* font-family: 'Passion One', cursive;
-font-family: 'Signika', sans-serif; */
